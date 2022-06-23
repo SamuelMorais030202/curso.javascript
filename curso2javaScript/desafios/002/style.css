@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: aqua;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    border: 2px solid black;
+    background-color: white;
+    padding: 8px;
+}
+
+img{
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+}

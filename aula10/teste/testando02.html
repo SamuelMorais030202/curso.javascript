@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando eventos DOM</title>
+    <style>
+        h1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Exemplo de título</h1>
+
+    <script>
+        var h = document.getElementById('titulo')
+        h.addEventListener('click', x)
+        h.addEventListener('mouseenter', y)
+        h.addEventListener('mouseout', w)
+
+        function x(){
+            h.innerText = 'Clicou!!'
+            h.style.background = 'red'
+        }
+        function y(){
+            h.innerText = 'Entrou!!'
+        }
+        function w(){
+            h.innerText = 'Saiu!!'
+            h.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>

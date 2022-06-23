@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando dom</title>
+    <style>
+        h1{
+            border: black solid 2px;
+            color: blanchedalmond;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos praticar um pouco da árvore DOM. Mão na massa ...</h1>
+    <p>Atraves do princípio da árvore dom, podemos fazer alteraões em qualquer parte do <br>
+    nosso site. <br></p>
+    <p>Para trabalharmos com esse princípio dentro do JavaScript, precisamos inserir o <br>
+    elemento DOM que será modificado dentro de uma variável. <br></p>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        p1.style.fontWeight = 'bold'
+
+        var p2 = document.getElementsByTagName('p')[1]
+        document.write(p2.innerText)
+        p2.style.fontStyle = 'italic'
+        p2.style.border ='solid'
+
+        alert(p1.innerText)
+    </script>
+</body>
+</html>

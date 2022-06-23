@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos testar o DOM</title>
+</head>
+<body>
+    <h1>Testando e treinando com DOM</h1>
+    <p id ="primeiro">Atraves da árvore dom, podemos fazer modificações e alterações no nosso site <br></p>
+    <p>Árvore DOM : <br></p>
+    <ol id="lista">
+        <li>window
+            <ol>
+                <li>
+                    document
+                    <ol class="lista">
+                        <li>
+                            html e suas tags
+                        </li>
+                    </ol>
+                </li>
+                <li>Location</li>
+                <li>History</li>
+            </ol>
+        </li>
+    </ol>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        document.write(p1.innerText)
+
+        var d = document.body
+        d.style.backgroundColor ='blue'
+        d.style.color = 'beige'
+        d.style.fontStyle = 'italic'
+
+        var identidade = document.getElementById('primeiro')
+        document.write(identidade.innerText)
+        identidade.style.color = 'black'
+        identidade.style.fontWeight = 'bolder'
+        identidade.style.fontSize = '20px'
+
+        var li = document.getElementsByClassName('lista')[0]
+        document.write(li.innerText)
+        li.style.color = 'black'
+        li.style.fontWeight = 'bolder'
+
+    </script>
+</body>
+</html>

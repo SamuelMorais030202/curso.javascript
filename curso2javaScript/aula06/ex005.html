@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(50, 54, 73);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM. </h1>
+    <p>Aqui vai o resultado...</p>
+    <div id="res">Clique em mim!</div>
+    <div id="ress">BBBBNB</div>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <script>
+        /*Selecionando elementos por ID
+        var p1 = document.getElementsByTagName('p')[0]
+        document.writeln(p1.innerText)
+        p1.style.color = 'black'
+
+        var corpo = document.body
+        corpo.style.background = 'blue'
+
+        var titulo = document.getElementsByTagName('h1')[0]
+        document.writeln(titulo.innerText)
+
+        //Selecionando por ID
+        var res = document.getElementById('res')
+        res.style.background = 'green'
+        res.innerText = 'Resultado da manipulação'
+        */
+
+        var d = document.querySelector('div#res')
+        d.style.color = 'blue'
+
+    </script>
+
+</body>
+</html>

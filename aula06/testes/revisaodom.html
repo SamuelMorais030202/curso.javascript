@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisando o básico da estrutura DOM</title>
+</head>
+<body>
+    <h1>Oque é o DOM ?</h1>
+    <p>Através do dom podemos fazer modificações com JavaScript dentro do nosso <br>
+    documento HTML.</p>
+    <h2>Existem algumas maneiras de fazermos essas modificações :</h2>
+    <p>Por marca</p>
+    <p id="teste">Por ID</p>
+    <p>Por class</p>
+
+    <script>
+        var marca = document.getElementsByTagName('p')[1].style.color = 'blue'
+        var idn = document.getElementById('teste').style.color = 'green'
+        var c = document.getElementsByTagName('p')[3].style.color = 'red'
+
+        var corpo = document.body
+        corpo.style.backgroundColor = 'black'
+        corpo.style.color = 'white'
+    </script>
+
+</body>
+</html>

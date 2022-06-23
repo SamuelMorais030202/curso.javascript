@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando a média de um aluno</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div#corpo{
+            height: 450px;
+            width: 380px;
+            border: 2px solid rgb(247, 245, 245);
+            text-align: center;
+            font: italic normal 14px arial;
+            background-color: rgb(138, 131, 131);
+            margin: auto;
+        }
+        input{
+            width: 60px;
+        }
+        aside{
+            margin: 40px;
+        }
+        #bot{
+            height: 40px;
+            width: 70px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="corpo">
+        <header>
+            <h1>Média do aluno</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Digite a primeira nota do aluno :</h2>
+                <input type="number" name="notn1" id="notn1">
+            </section>
+            <section>
+                <h2>Digite a segunda nota do aluno :</h2>
+                <input type="number" name="notn2" id="notn2">
+            </section>
+            <section>
+                <h2>Digite a terceira nota do aluno :</h2>
+                <input type="number" name="notn3" id="notn3">
+            </section>
+            <aside id="cal">
+                <input type="button" value="Calcule" onclick="calcular()" id="bot">
+            </aside>
+        </main>
+        <div id="est">estado do ALUNO</div>
+    </div>
+
+    <script>
+        function calcular(){
+            var tn1 = document.getElementById('notn1')
+            var tn2 = document.getElementById('notn2')
+            var tn3 = document.getElementById('notn3')
+            var ca = document.getElementById('cal')
+            var aluno = document.getElementById('est')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(tn3.value)
+            var med = (n1 + n2 + n3 ) / 3
+            ca.innerText = 'A média do aluno é : ' + med.toFixed(2)
+
+            if (med < 6){
+                aluno.innerText ='Aluno REPROVADO'
+            } 
+            else {
+                aluno.innerText='Aluno APROVADO'
+            }
+        }
+    </script>
+</body>
+</html>

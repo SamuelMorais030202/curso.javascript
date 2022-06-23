@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando a média de dois números</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos calcular a média de dois números</h1>
+    
+    <script>
+        var n1 =Number(prompt('Digite o valor do primeiro número :'))
+        var n2 =Number(prompt('Digite o valor do segundo número :'))
+        var me = (n1 + n2) / 2
+        var re = me >= 6 ? 'APROVADO' : 'REPROVADO'
+        alert('A media entre ' + n1 + ' e ' + n2 + ' é: ' + me)
+        document.write('A media entre ' + n1 + ' e ' + n2 + ' é: ' + me)
+        document.write(' <br> Você foi : ' + re)
+
+        if(me < 6){
+            document.write('Aluno REPROVADO!')
+        }
+         else{
+            document.write('Aluno APROVADO!')
+        }
+
+        function med(a,b){
+            return (a + b) / 2
+        }
+
+        document.write(med(5, 10))
+
+    </script>
+</body>
+</html>

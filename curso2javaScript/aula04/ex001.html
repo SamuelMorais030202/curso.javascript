@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Script</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: rgb(37, 37, 35);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Vamos focar</p>
+    <div id="div"></div>
+
+    <script>
+        alert('Bom dia')
+        confirm('Como está seu dia ?')
+        prompt('Qual é seu nome ?') 
+        let idade = Number(prompt('Quantos anos você tem ?'))//entrada de dados
+        var res= document.getElementById('div')
+        res.innerHTML = `${idade}`
+    </script> 
+
+</body>
+</html>

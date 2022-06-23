@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkcyan;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    border: 2px solid black;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(211, 207, 207);
+    border-radius: 10px;
+    box-shadow: 5px 6px 4px black;
+    padding: 8px;
+}
+
+input{
+    padding-right: 15px;
+}
+
+/*
+select{
+    height: 300px;
+    width: 200px;
+}
+*/
+
+footer{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Nacionalidade</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Em qual país você nasceu ?</h2>
+                <input type="text" name="nacionalidade" id="nacionalidade"> 
+            </section>
+            <aside id="naci">
+                <input type="button" value="verificar" onclick="calcular()">
+            </aside>
+        </main>
+    </div>
+
+    <script>
+        function calcular(){
+            var nacion = document.getElementById('nacionalidade')
+            var nac = String(nacion.value)
+            var res = document.getElementById('naci')
+            if(nac == 'Brasil'){
+                res.innerText = 'Você é Brasileiro!'
+            } else{
+                res.innerText = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

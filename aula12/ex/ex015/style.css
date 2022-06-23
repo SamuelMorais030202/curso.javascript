@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+header{
+    text-align: center;
+}
+
+main{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    height:200px ;
+    width: 250px;
+}
+
+#botão{
+    padding: 10px;
+}

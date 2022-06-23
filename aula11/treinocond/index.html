@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Notas dos ALUNOS</h1>
+        </header>
+        <main>
+            <section>
+                <p>Insira o nome do Aluno :</p>
+                <input type="text" name="nome" id="nome">
+            </section>
+            <section>
+                <p>Insira a primeira nota do aluno:</p>
+                <input type="number" name="ntnt1" id="ntnt1">
+            </section>
+            <section>
+                <p>Insira a segunda nota do aluno:</p>
+                <input type="number" name="ntnt2" id="ntnt2">
+            </section>
+            <section>
+                <p>Insira a terceira nota do aluno:</p>
+                <input type="number" name="ntnt3" id="ntnt3">
+            </section>
+            <section id="calc">
+                <input type="button" value="calcular" onclick="calcular()">
+            </section>
+            <section id="stal">
+                Situação do ALUNO...
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function calcular() {
+            var nom = document.getElementById('nome')
+            var tn1 = document.getElementById('ntnt1')
+            var tn2 = document.getElementById('ntnt2')
+            var tn3 = document.getElementById('ntnt3')
+            var cal = document.getElementById('calc')
+            var sa = document.getElementById('stal')
+            var no = String(nom.value)
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(tn3.value)
+            var m = (n1 + n2 + n3) / 3
+            cal.innerText = 'O aluno '+no+ ' ficou com '+m.toFixed(2)+ ' pontos de média.'
+            if (m < 6){
+                sa.innerText = no + ' foi REPROVADO!'
+            } else {
+                sa.innerText = no + ' foi APROVADO!'
+            }
+        }
+    </script>
+
+</body>
+</html>

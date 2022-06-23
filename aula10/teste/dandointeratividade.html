@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dando mais interatividade</title>
+</head>
+<style>
+    div#caixa{
+        width: 300px;
+        border: 2px solid black;
+        padding: 0px 1px 3px 2px;
+        margin: auto;
+        text-align: center;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div id="caixa">
+        <h1>Somando dois números</h1>
+        <div id="num1">
+            <p>Insira o primeiro número :</p>
+            <input type="number" name="nin1" id="nin1">
+        </div>
+        <div id="num2">
+            <p>Insira o segundo número :</p>
+            <input type="number" name="nin2" id="nin2">
+        </div>
+        <div id="res">
+            <input type="button" value="Calcule!" onclick="soma()">
+        </div>
+
+        <script>
+            function soma(){
+                var in1 = document.getElementById('nin1')
+                var in2 = document.getElementById('nin2')
+                var resul = document.getElementById('res')
+                var n1 = Number(in1.value)
+                var n2 = Number(in2.value)
+                var s = n1 + n2
+                resul.innerText = s
+            }
+        </script>
+    </div>
+</body>
+</html>
